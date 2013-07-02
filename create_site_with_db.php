@@ -165,10 +165,8 @@ else {
 #}
 
 #
-# Mail and print info
+# print info
 #
-$hostname = system("hostname");
-mail("mmh@bellcom.dk","New site at $hostname","DBNAME = $dbname DBUSERNAME = $dbusername DBPASS = $passwd\nSitepath: $sitepath$sitename\n");
 
 print "\n\nHusk at reload apache med:\n";
 print "/etc/init.d/apache2 reload\n";
